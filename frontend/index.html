@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hybrid Agent</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div id="app">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>🤖 AI Hybrid Agent</h1>
+                <div class="status-indicator">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="status-text">Connecting...</span>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="messages">
+                <div class="message assistant welcome">
+                    <div class="message-content">
+                        <p>👋 Hello! I'm your AI assistant powered by Llama 3.3. You can chat with me using text or voice.</p>
+                        <p>Try asking me anything or click the microphone button to speak!</p>
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        placeholder="Type your message..." 
+                        autocomplete="off"
+                    >
+                    <div class="input-actions">
+                        <button id="voiceButton" class="voice-btn" title="Voice input">
+                            <span class="voice-icon">🎤</span>
+                        </button>
+                        <button id="sendButton" class="send-btn" title="Send message">
+                            <span class="send-icon">➤</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

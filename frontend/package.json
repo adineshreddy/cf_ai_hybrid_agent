@@ -1,0 +1,20 @@
+{
+  "name": "ai-agent-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for AI-powered hybrid chat/voice agent",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "css-reset-and-normalize": "^2.3.6"
+  }
+}
